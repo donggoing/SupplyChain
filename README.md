@@ -4,6 +4,9 @@
 前后端分别使用Vue和Express开发，与FISCO-BCOS联盟链的交互使用官方提供的Nodejs-SDK。
 
 
+## 使用演示
+使用演示视频见：[项目演示视频](./项目演示视频.mp4)
+
 ## 节点连接配置
 连接新节点需要配置backend\api\conf\config.json下的节点地址和RPC通讯端口,并替换backend\api\conf\key,backend\api\conf\ca,backend\api\conf\cert下的证书。
 ```
