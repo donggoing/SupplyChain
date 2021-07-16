@@ -10,11 +10,12 @@
 ## 节点连接配置
 连接新节点需要配置backend\api\conf\config.json下的节点地址和RPC通讯端口,并替换backend\api\conf\key,backend\api\conf\ca,backend\api\conf\cert下的证书。
 ```
-    "nodes": [
-        {
-            "ip": "127.0.0.1",
-            "port": "20200"
-        }
+"nodes": [
+    {
+        "ip": "127.0.0.1",
+        "port": "20200"
+    }
+]
 ```
 
 ## 添加新账户方法
@@ -22,10 +23,10 @@
 将根目录下get_account.sh生成的私钥文件置于\api\conf\accounts\目录下
 并修改\api\conf\config.json文件的privateKey项,添加新增项,添加格式如：
 ```
-        "华为":{ 
-            "type": "pem",
-            "value":"./accounts/0x43ed12399576540c80b3be1525e15897318ee044.pem"
-        },
+"华为":{ 
+    "type": "pem",
+    "value":"./accounts/0x43ed12399576540c80b3be1525e15897318ee044.pem"
+},
 ```
 
 ## 启动项目
